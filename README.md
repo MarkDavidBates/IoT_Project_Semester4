@@ -16,5 +16,6 @@ To get a working prototype of my proposed project, i will need:
 - (other hardware may be necessary)
 
 This project will be coded using:
+
 -Python
 - (other coding languages may be used)
