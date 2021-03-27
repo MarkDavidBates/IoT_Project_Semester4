@@ -11,6 +11,8 @@ For this project, i wish to build off what i did in my previous IoT project from
 
 ![](images/MoodMeterFlowchart.png)
 
+The user will use Blynk to choose between a set number of moods, the pi will then end the temperature and audio data to the user who can decide if they want to turn up/down the temperature. Data may also be sent to the users email/social media stating their mood.
+
 ## Tools, Tech and Equipment
 To get a working prototype of my proposed project, i will need:
 - **Raspberry Pi**
