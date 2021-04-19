@@ -20,6 +20,7 @@ To get a working prototype of my proposed project, i will need:
 - **Raspberry Pi**
 - **Sense Hat**
 - **Blynk**
+- **thingspeak**
 - (other hardware may be necessary)
 
 ---
@@ -27,5 +28,3 @@ To get a working prototype of my proposed project, i will need:
 This project will be coded using:
 - **Python**
 - (other coding languages may be used)
-
-Cloud technologies such as **Thingspeak** or similar may also be implemented
