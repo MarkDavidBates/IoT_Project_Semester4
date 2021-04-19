@@ -2,16 +2,13 @@
 
 import blynklib
 from sense_hat import SenseHat
+from faces import normal, sad, happy
 
 #Personal authentication key for Blynk
 BLYNK_AUTH = 'vcIWMN9GL2XKoyJn9cclkl2Q_Rwx8knN'
 
 sense = SenseHat()
 sense.clear()
-
-green = (0,255,0)
-orange = (255,165,0)
-red = (255,0,0)
 
 # initialize Blynk
 blynk = blynklib.Blynk(BLYNK_AUTH)
@@ -25,15 +22,15 @@ def write_vp3_slider(pin, value):
         if int(value[0]) == 0:
                 #sense.clear(0,0,255)
                 print('feeling good :)')
-                sense.show_message(':)', text_colour = green)
+                sense.set_pixels(happy)
         elif int(value[0]) == 1:
                 #sense.clear(255,200,0)
                 print('feeling ok :|')
-                sense.show_message(':|', text_colour = orange)
+                sense.set_pixels(normal)
         elif int(value[0]) == 2:
                 #sense.clear(255,0,0)
                 print('feeling bad :(')
-                sense.show_message(':(', text_colour = red)
+                sense.set_pixels(sad)
         else:
                 sense.clear(255,255,255)
 
