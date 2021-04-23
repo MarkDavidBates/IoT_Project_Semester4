@@ -8,8 +8,8 @@ from sense_hat import SenseHat
 from faces import normal, sad, happy
 
 #Personal authentication key for Blynk and Thingspeak
-BLYNK_AUTH = 'vcIWMN9GL2XKoyJn9cclkl2Q_Rwx8knN'
-TS_API_KEY = '4UJI1HS1VXFU2MUC'
+BLYNK_AUTH = '<BLYNK AUTHENTICATION KEY HERE>'
+TS_API_KEY = '<THINGSPEAK API KEY HERE>'
 
 #Thingspeak API URL
 baseURL = 'https://api.thingspeak.com/update?api_key=%s' % TS_API_KEY
