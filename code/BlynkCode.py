@@ -16,6 +16,7 @@ baseURL = 'https://api.thingspeak.com/update?api_key=%s' % TS_API_KEY
 
 sense = SenseHat()
 sense.clear()
+mood = '0'
 
 # initialize Blynk
 blynk = blynklib.Blynk(BLYNK_AUTH)
@@ -25,7 +26,9 @@ blynk = blynklib.Blynk(BLYNK_AUTH)
 #output will also be sent to a channel on Thingspeak
 @blynk.handle_event('write V1')
 def write_vp3_slider(pin, value):
+        global mood
         print('V1:' + str(value))
+        mood = str(value[0])
         if int(value[0]) == 0:
                 print('feeling good :)')
                 sense.set_pixels(happy)
@@ -44,6 +47,16 @@ def read_virtual_pin_handler(pin):
     temp=round(sense.get_temperature(),2)
     print('V0 Read: ' + str(temp))
     blynk.virtual_write(pin, temp)
+    writeData(temp)
+        
+#thingspeak code
+def writeData(temp):
+        global mood
+        URL = baseURL + '&field1=%s&field2=%s' % (str(mood),str(temp))
+        print(URL)
+        conn = urlopen(baseURL + '&field1=%s&field2=%s' % (str(mood),str(temp)))
+        print(conn.read())
+        conn.close()
 
 # infinite loop that waits for event
 while True:
