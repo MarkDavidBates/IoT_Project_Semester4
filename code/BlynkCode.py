@@ -75,3 +75,17 @@ def writeData(temp):
 # infinite loop that waits for event
 while True:
         blynk.run()
+        for event in sense.stick.get_events():
+                if event.action == "pressed":
+                        if event.direction == "up":
+                                print('feeling ok :|')
+                                sense.set_pixels(normal)
+                                mood = 1
+                        elif event.direction == "left":
+                                print('feeling good :)')
+                                sense.set_pixels(happy)
+                                mood =0
+                        elif event.direction == "right":
+                                print('feeling bad :(')
+                                sense.set_pixels(sad)
+                                mood = 2
