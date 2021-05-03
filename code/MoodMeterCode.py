@@ -1,4 +1,4 @@
-#Blynk code for Project4 "Mood Meter"
+#code for Project4 "Mood Meter"
 
 import json
 import time
@@ -21,20 +21,6 @@ mood = '0'
 # initialize Blynk
 blynk = blynklib.Blynk(BLYNK_AUTH)
 
-#Physical mood input on pi
-while True:
-        for event in sense.stick.get_events():
-                if event.action == "pressed":
-                        if event.direction == "up":
-                                print('feeling ok :|')
-                                sense.set_pixels(normal)
-                        elif event.direction == "left":
-                                print('feeling good :)')
-                                sense.set_pixels(happy)
-                        elif event.direction == "right":
-                                print('feeling bad :(')
-                                sense.set_pixels(sad)
-                                
 #set your current mood by adjusting the slider.
 #output will be sent to the senseHat
 #output will also be sent to a channel on Thingspeak
@@ -43,10 +29,10 @@ def write_vp3_slider(pin, value):
         global mood
         print('V1:' + str(value))
         mood = str(value[0])
-        if int(value[0]) == 0:
+        if int(value[0]) == 1:
                 print('feeling good :)')
                 sense.set_pixels(happy)
-        elif int(value[0]) == 1:
+        elif int(value[0]) == 0:
                 print('feeling ok :|')
                 sense.set_pixels(normal)
         elif int(value[0]) == 2:
