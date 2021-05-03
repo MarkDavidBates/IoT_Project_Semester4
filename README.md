@@ -72,6 +72,7 @@ This project is coded using:
 3) go to the ThingTweet option in Apps and link a twitter account 
 4) next, go to the React option under Apps and create a new React and set it to the following:
 ![](images/image4.jpeg)
+
 **(be sure to set the twitter account to your linked account)**
 5) go to IFTTT.com and click "create", then "add". chose the Webhooks service and choose the "Recieve a web request" option.
 6) give it the name "Bad_Mood" and then create the trigger
@@ -81,4 +82,5 @@ Copy the URL
 9) back in Thingspeak, Go to Apps, then ThingHTTP. Create a new HTTP, set the Method to GET and pace the URL you got from the previous step into the URL box
 10) Go bact to the React in Apps and create a new React with the following:
 ![](images/image5.jpeg)
-**change channel names and your ThingHTTP name where appropriate**
+
+**(change channel names and your ThingHTTP name where appropriate)**
