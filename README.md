@@ -5,6 +5,8 @@ Continuous assessment Project for IoT Standards and Protocols.
 `Student Name:` Mark Bates
 `Student ID:` 20088639
 
+![](images/image2.jpeg)
+
 ## What is it?
 
 This project is a prototype "mood moniter" or "self wellness check" that someone can use to moniter and track their mood from their phone or from a Raspberry Pi
@@ -19,6 +21,7 @@ three options currently:
 - happy
 - normal
 - sad
+
 once set, the raspberry pi will recieve and send that data to a Thingspeak channel and plot it on a graph. it will then do one of three things:
 `if happy:` thingspeak will tweet that the user is happy
 `if normal:` thingspeak will do nothing
