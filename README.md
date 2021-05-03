@@ -27,6 +27,8 @@ once set, the raspberry pi will recieve and send that data to a Thingspeak chann
 
 ![](images/image1.jpeg)
 
+---
+
 ![](images/image3.jpeg)
 
 ---
