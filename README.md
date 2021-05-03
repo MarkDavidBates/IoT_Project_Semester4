@@ -90,4 +90,6 @@ Copy the URL
 
 1) create a new Directory called "MoodMeter"
 2) place the python file in the code section of this repository here
-3) switch out the
+3) switch out the following placeholders with you Authentication keys for your Blynk project and Thingspeak channel
+![](images/image6.jpeg)
+4) run the code and the project on Blynk, you should see an output on your terminal screen aswell as data being sent to your thingspeak channel.
