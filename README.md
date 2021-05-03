@@ -19,13 +19,12 @@ three options currently:
 - happy
 - normal
 - sad
-
-![](images/image1.jpeg)
-
 once set, the raspberry pi will recieve and send that data to a Thingspeak channel and plot it on a graph. it will then do one of three things:
 `if happy:` thingspeak will tweet that the user is happy
 `if normal:` thingspeak will do nothing
 `if sad:` thingspeak will send out an email
+
+![](images/image1.jpeg)
 
 ##Further Development Options
 
