@@ -29,15 +29,19 @@ once set, the raspberry pi will recieve and send that data to a Thingspeak chann
 
 ![](images/image1.jpeg)
 
-##Further Development Options
+---
+
+## Further Development Options
 
 This Project could be further developed on and take full advantage of IoT technologies. Using the pi, scripts could be created that can turn on and off appliances depending
 on the mood. the Project could also have it's own dedicated app that sets and tracks the users mood. this could also lead to a more wide range of settings a user could give.
 
-##Real World Applications
+## Real World Applications
 
 this project was aimed to be used in a number of environments. Possible uses could be in the social care sector. A social worker could recieve a message whenever a user has had their mood set to bad for a number of logs. They can then respond with a welness check.
 Another area of use could be with children on the spectrum or who have a disability such as deafness. The app could work similarly with some changes.
+
+---
 
 ## Tools, Tech and Equipment
 The project uses the following:
@@ -45,8 +49,6 @@ The project uses the following:
 - **Sense Hat**
 - **Blynk**
 - **thingspeak**
-
----
 
 This project is coded using:
 - **Python**
