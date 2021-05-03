@@ -20,7 +20,7 @@ three options currently:
 - normal
 - sad
 
-![](images/MoodMeterFlowchart.png)
+![](images/image1.jpeg)
 
 once set, the raspberry pi will recieve and send that data to a Thingspeak channel and plot it on a graph. it will then do one of three things:
 `if happy:` thingspeak will tweet that the user is happy
