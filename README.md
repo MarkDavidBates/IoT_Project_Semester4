@@ -38,15 +38,13 @@ this project was aimed to be used in a number of environments. Possible uses cou
 Another area of use could be with children on the spectrum or who have a disability such as deafness. The app could work similarly with some changes.
 
 ## Tools, Tech and Equipment
-To get a working prototype of my proposed project, i will need:
+The project uses the following:
 - **Raspberry Pi**
 - **Sense Hat**
 - **Blynk**
 - **thingspeak**
-- (other hardware may be necessary)
 
 ---
 
-This project will be coded using:
+This project is coded using:
 - **Python**
-- (other coding languages may be used)
