@@ -81,6 +81,7 @@ This project is coded using:
 Copy the URL
 9) back in Thingspeak, Go to Apps, then ThingHTTP. Create a new HTTP, set the Method to GET and pace the URL you got from the previous step into the URL box
 10) Go bact to the React in Apps and create a new React with the following:
+
 ![](images/image5.jpeg)
 
 **(change channel names and your ThingHTTP name where appropriate)**
