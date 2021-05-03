@@ -51,6 +51,34 @@ The project uses the following:
 - **Sense Hat**
 - **Blynk**
 - **thingspeak**
+- **IFTTT**
 
 This project is coded using:
 - **Python**
+
+# Project Setup
+**make sure you have an account set up for all applications used**
+## Blynk
+
+1) set up a new workspace
+2) chose the slider and Vlaue Display in the Widet Box
+3) set the sliders output to V1 and it's min max to 0 and 2
+4) set the Value Display Reading Rate to 30 seconds
+
+## Thingspeak
+
+1) create a new channel called Mood Meter with two fields: `field 1:` Mood Records, `field 2:` Temperature
+2) go to API Key and take note of the first link under API Requests (you will need this later)
+3) go to the ThingTweet option in Apps and link a twitter account 
+4) next, go to the React option under Apps and create a new React and set it to the following:
+![](images/image4.jpeg)
+**(be sure to set the twitter account to your linked account)**
+5) go to IFTTT.com and click "create", then "add". chose the Webhooks service and choose the "Recieve a web request" option.
+6) give it the name "Bad_Mood" and then create the trigger
+7) click "Add" for the Then That card and chose Email. connect your email and set the Subject and Body to whatever you want.
+8) once created, go to the "My services" under your account. Click Webhooks and then "Documentation" cset the event name to "Bad_Mood"
+Copy the URL
+9) back in Thingspeak, Go to Apps, then ThingHTTP. Create a new HTTP, set the Method to GET and pace the URL you got from the previous step into the URL box
+10) Go bact to the React in Apps and create a new React with the following:
+![](images/image5.jpeg)
+**change channel names and your ThingHTTP name where appropriate**
