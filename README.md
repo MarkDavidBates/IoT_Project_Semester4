@@ -11,8 +11,6 @@ Continuous assessment Project for IoT Standards and Protocols.
 
 This project is a prototype "mood moniter" or "self wellness check" that someone can use to moniter and track their mood from their phone or from a Raspberry Pi
 
----
-
 ## How it works
 
 The project uses a combination of IOT applications and technologies to help the user log their mood aswell as use that data to send tweets or emails depending on what they set.
