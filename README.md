@@ -85,3 +85,9 @@ Copy the URL
 ![](images/image5.jpeg)
 
 **(change channel names and your ThingHTTP name where appropriate)**
+
+## Raspberry Pi
+
+1) create a new Directory called "MoodMeter"
+2) place the python file in the code section of this repository here
+3) switch out the
