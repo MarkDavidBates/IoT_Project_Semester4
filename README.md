@@ -5,7 +5,7 @@ Continuous assessment Project for IoT Standards and Protocols.
 `Student Name:` Mark Bates
 `Student ID:` 20088639
 
-![](video/Project4.mp4)
+![](images/image2.jpeg)
 
 ## What is it?
 
